@@ -1,30 +1,30 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    int num_input ;
-    int odd = 0;
+int main() {
+    int n;
     int even = 0;
-    while (num_input != 0)
-    {
+    int odd = 0;
+
+    while (true) {
         cout << "Enter an integer: ";
-        cin >> num_input;
-        if (num_input == 0)
-        {
+        cin >> n;
+
+    
+        if (n == 0) {
             break;
         }
-        if (num_input % 2 == 0)
-        {
+
+        
+        if (n % 2 == 0) {
             even++;
-        }
-        else
-        {
+        } else {
             odd++;
         }
     }
-    
-    
-    cout << "#Even numbers = " << even << "\n";
-    cout << "#Odd numbers = " << odd << "\n";
+
+    cout << "#Even numbers = " << even << endl;
+    cout << "#Odd numbers = " << odd << endl;
+
     return 0;
 }
